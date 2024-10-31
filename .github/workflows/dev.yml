@@ -10,13 +10,16 @@ on:
         description: 'Location of the app code'
         required: true
         default: '/'
+        type: string
       output_location:
         description: 'Output location after build'
         required: true
         default: '.'
+        type: string
       azure_static_web_apps_api_token:
         description: 'Azure API Token for Static Web Apps'
         required: true
+        type: string
 
 jobs:
   build_and_deploy_job:
